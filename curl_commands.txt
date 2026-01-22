@@ -1,0 +1,12 @@
+# 1. Получение всех задач:
+curl -X GET http://localhost:5000/api/tasks
+
+# 2. Создание новой задачи:
+curl -X POST http://localhost:5000/api/tasks \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Новая задача"}'
+
+# 3. Обновление статуса задачи с ID=1:
+curl -X PUT http://localhost:5000/api/tasks/1 \
+  -H "Content-Type: application/json" \
+  -d '{"status": "done"}'
