@@ -1,7 +1,11 @@
 cd "C:\Users\Icecr\Desktop\task_manager_api\task_manager_api"
+# Создать venv (если нет)
+python -m venv venv
+c# Активировать
 venv\Scripts\activate
 pip install flask requests
 pip install flask
+pip install -r requirements.txt
 python app.py
 в новом терминале:
 cd C:\Users\Icecr\Desktop\task_manager_api\task_manager_api
